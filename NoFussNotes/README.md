@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
+## Deploying to GitHub pages
+
+> **Note:** GitHub pages are always public!
+
+GitHub pages are configured to be served from `/docs` directory on the `master` branch.
+
+The following commands will build the project and prepare it for deployment on GitHub pages:
+```
+ng build --prod --output-path ../docs --base-href /NoFussNotes/
+copy ..\docs\index.html ..\docs\404.html
+echo "" > ..\docs\.nojekyll
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
